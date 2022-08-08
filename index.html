@@ -29,7 +29,7 @@
                     <a class="nav-link" href="#design-section">Designs</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#mileston-section">Milestones</a>
+                    <a class="nav-link" href="#milestone-section">Milestones</a>
                   </li>
                 </ul>
               </div>
@@ -42,6 +42,14 @@
             <div class="px-5 py-5 text-center">
                 <h1 class="fs-1 fw-bold pt-5">Nearby</h1>
                 <p class="fs-3 fst-italic mb-5">The map-based social media Android app</p>
+                <div class="embed-responsive">
+                    <img src="img/App_Icon.png" loading="eager" class="img-fluid">
+                </div>
+            </div>
+            <div class="d-grid d-sm-flex gap-3 justify-content-sm-center">
+                <button type="button" class="btn btn-lg btn-outline-dark">App APK here</button>
+                <button type="button" class="btn btn-lg btn-outline-secondary">Source Code</button>
+                <a href="Nearby.apk" download="download">Source Code</a>
             </div>
         </div>
         <!-- About Section -->
@@ -58,7 +66,7 @@
             </div>
             <div class="d-grid d-sm-flex gap-3 justify-content-sm-center">
                 <button type="button" onclick="location.href='https://youtu.be/GUxwgt-rB6k'" class="btn btn-lg btn-outline-dark">Watch our Pitch!</button>
-                <button type="button" onclick="location.href='https://docs.google.com/presentation/d/1WFR7-iU6sKss729dWIzgeLtB8o5Keoa8_GyZTNSGfAc/edit?usp=sharing'" class="btn btn-lg btn-outline-secondary">View our Pitch Slides</button>
+                <button type="button" onclick="location.href='https://docs.google.com/presentation/d/1WFR7-iU6sKss729dWIzgeLtB8o5Keoa8_GyZTNSGfAc/edit?usp=sharing'" class="btn btn-lg btn-outline-secondary">View Pitch Slides</button>
             </div>
         </div>
         <!-- Meet the Team -->
@@ -68,7 +76,7 @@
                 <div class="col-md-6 col-lg-5 mb-4">
                     <h2 class="text-center">Larren Canapi</h2>
                     <p class="text-center fw-bold fst-italic">
-                        Role: Android/Website Developer
+                        Role: Android/UI/Website Developer
                     </p>
                     <p>
                         <span class="fw-bold">Show and Tell 1 Work:</span> Developed the Nearby Project Team's Website to display all of the project team's content and links for Show and Tell 1.
@@ -77,6 +85,10 @@
                     <p>
                         <span class="fw-bold">Show and Tell 2 Work:</span> Helped setup Firebase into the app and worked on the feature of adding new posts from the app to the Firestore collection. Implemented
                         favouriting posts and saving them locally with Shared Preferences. Updated the project webpage with Show and Tell 2 content. Planned to work on more FireBase integration and UI improvements of the mobile app.
+                    </p>
+                    <p>
+                        <span class="fw-bold">Final Submission Work:</span> Worked on saving user created posts in shared preferences. Helped design the new app icon for Nearby.
+                        Updated the project webpage with final submission content
                     </p>
                 </div>
                 <div class="col-md-6 col-lg-5 mb-4">
@@ -91,6 +103,9 @@
                     <p>
                         <span class="fw-bold">Show and Tell 2 Work:</span> Helped setup Firebase into the app and incorporating the viewmodel interactions. Implemented adding and replying to comments from the app to the Firestore
                         collection. Incorporated the Flow Coroutine library for async database functions and started work on the post filter functionality for the app. Planned to work on more FireBase integration and UI improvements of the mobile app.
+                    </p>
+                    <p>
+                        <span class="fw-bold">Final Submission Work:</span> Worked on the posts filter for the app so users can query posts based on certain criteria. Helped design the new app icon for Nearby.
                     </p>
                 </div>
             </div>
@@ -108,6 +123,9 @@
                         <span class="fw-bold">Show and Tell 2 Work:</span> Added icon and colour support for the posts and post form creation in the app and helped to create the post details fragment to display
                         the post data in the app. Planned to work on more FireBase integration and UI improvements of the mobile app.
                     </p>
+                    <p>
+                        <span class="fw-bold">Final Submission Work:</span> Added functionality to get and load the user generated posts, and updated the listview of the users favourited posts.
+                    </p>
                 </div>
                 <div class="col-md-6 col-lg-5 mb-4">
                     <h2 class="text-center">Greg Parent</h2>
@@ -121,6 +139,9 @@
                     <p>
                         <span class="fw-bold">Show and Tell 2 Work:</span> Worked on app UI changes and drawing pin posts on the map from the Firebase Collection. Implemented uploading and downloading images from created posts using
                         Firebase storage. Incorporated the displaying of post detail content into the correct pin fragment. Planned to work on more FireBase integration and UI improvements of the mobile app.
+                    </p>
+                    <p>
+                        <span class="fw-bold">Final Submission Work:</span> Fixed issues that caused crashes within app. Got displaying of user-made/favourited posts working in the Saved Posts activity, and refactored the UI and post filter.
                     </p>
                 </div>
             </div>
@@ -172,7 +193,7 @@
             </div>
         </div>
         <!-- Show and Tell Milestones -->
-        <div id="mileston-section" class="container pt-5 border-top">
+        <div id="milestone-section" class="container pt-5 border-top">
             <h2 class="fs-2 fw-bold pt-5 mt-5 mb-4 pb-3 text-center text-decoration-underline">Milestones</h2>
             <h3 class="fs-3 fw-bold text-center text-decoration-underline">Show and Tell 1</h3>
             <div class="row py-3 justify-content-center">
@@ -221,16 +242,31 @@
                 <div class="col-sm-10 pb-2 col-md-8">
                     <p>
                         For our final submission, we plan on finishing up our posts filter and our post category feature. In addition, we want to allow our users easy access to posts they've favourited by
-                        adding a favourite posts and user made posts page. Finally, we want to do updates to our UI design to make it cleaner and include a custom app icon.   
+                        adding a favourite posts and user-made posts page. Finally, we want to do updates to our UI design to make it cleaner and include a custom app icon.   
                     </p>
                 </div>
             </div>
-            <div class="row pb-5 justify-content-center">
+            <div class="row pb-5 mb-5 justify-content-center">
                 <div class="col-sm-10 col-md-8">
                     <div class="ratio ratio-16x9">
                         <iframe src="https://www.youtube.com/embed/qVNmChlYhkM" allowfullscreen></iframe>
                     </div>
                 </div>
+            </div>
+            <h3 class="fs-3 fw-bold text-center text-decoration-underline">Final Project Submission</h3>
+            <div class="row py-3 justify-content-center">
+                <div class="col-sm-10 col-md-8">
+                    <p>
+                        For the final submission, we have finished our post filter which allows the user to search for posts based on certain criteria like tags and date times. 
+                        We have coded the Saved Posts activity where users can see the posts that they've favourited and created themselves alongside that post's information. 
+                        Clicking on that post will take you to that post's information fragment on the map.
+                        We also have fixed some errors and bugs which have caused app crashes in previous iterations. 
+                        Finally, we also added a new app icon for Nearby to give our app a bit more personality.
+                    </p>
+                </div>
+            </div>
+            <div class="d-grid d-sm-flex gap-3 mb-5 justify-content-sm-center">
+                <button type="button" class="btn btn-lg btn-outline-dark">View our Final Presentation Slides</button>
             </div>
         </div>
     </main>
